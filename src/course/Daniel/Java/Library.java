@@ -7,6 +7,7 @@ import java.util.ArrayList;
  */
 public class Library {
     ArrayList<Book> books = new ArrayList<>();
+    ArrayList<Book> booksCopy = new ArrayList<>();
 
     public Library(){
 
@@ -14,19 +15,22 @@ public class Library {
 
     void addBook(Book b){
         books.add(b);
+        booksCopy.add(b);
+
+
     }
 
     //getAllBooks//printAllBooks
     void printBooks (){
-        for (Book b: books) {
-            System.out.println(b.getAuthor());
-            System.out.println(b.getName());
-            System.out.println(b.getSummary()+"\n\n");
+        for (Book b: booksCopy) {
+            System.out.println(b.getAuthorCopy());
+            System.out.println(b.getNameCopy());
+            System.out.println(b.getSummaryCopy()+"\n\n");
         }
     }
 
     public ArrayList<Book> getBooks() {
 
-        return books;
+        return booksCopy;
     }
 }

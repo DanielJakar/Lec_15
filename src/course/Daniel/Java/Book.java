@@ -8,6 +8,9 @@ public class Book {
     private String author;
     private String name;
     private String summary;
+    private String authorCopy;
+    private String nameCopy;
+    private String summaryCopy;
 
 
 
@@ -16,36 +19,39 @@ public class Book {
         this.author = author;
         this.name = name;
         this.summary = summary;
+
+    }
+
+    public Book (Book b) {
+        this.authorCopy = b.author;
+        this.nameCopy = b.name;
+        this.summaryCopy = b.summary;
     }
 
 
 
-    //Property getter
 
-
-    public String getAuthor() {
-        return author;
+    public String getAuthorCopy() {
+        return authorCopy;
     }
 
-    public String getName() {
-        return name;
+    public void setAuthorCopy(String authorCopy) {
+        this.authorCopy = authorCopy;
     }
 
-    public String getSummary() {
-        return summary;
+    public String getNameCopy() {
+        return nameCopy;
     }
 
-    //Property setter
-
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setNameCopy(String nameCopy) {
+        this.nameCopy = nameCopy;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getSummaryCopy() {
+        return summaryCopy;
     }
 
-    public void setSummary(String summary) {
-        this.summary = summary;
+    public void setSummaryCopy(String summaryCopy) {
+        this.summaryCopy = summaryCopy;
     }
 }

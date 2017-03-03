@@ -15,8 +15,8 @@ public class Main {
 
 
         //init 2 books
-        Book b1 = new Book("Java Software Solutions 8th Edition", "2112322-42331");
-        Book b2 = new Book("Java in a nutshell 6th Edition", "2342342-34331");
+        Book b1 = new Book("David Jacobs","Java Software Solutions 8th Edition", "2112322-42331");
+        Book b2 = new Book("sally fox","Java in a nutshell 6th Edition", "2342342-34331");
 
         //add the books to the library:
         lib.addBook(b1);
